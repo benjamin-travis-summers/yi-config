@@ -1,0 +1,29 @@
+name: e
+version: 0.14.0
+license: AGPL-3
+maintainer: Yi developers <yi-devel@googlegroups.com>
+category: Yi
+
+ghc-options: -Wall -ferror-spans -threaded
+
+dependencies:
+    - base >= 4.8 && < 5
+    - microlens-platform
+    - mtl
+    - yi-core
+    - yi-frontend-vty
+    - yi-keymap-vim
+    - yi-misc-modes
+    - yi-mode-haskell
+    - yi-rope
+    - yi-language
+    - array
+
+executables:
+    e:
+        main: Main.hs
+        source-dirs: src
+        include-dirs: src
+        other-modules: Texture
+        build-tools:
+            - alex >= 3.0.3 && < 3.2.0 || >= 3.2.1
