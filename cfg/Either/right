@@ -1,0 +1,3 @@
+λ(a:Type) → λ(b:Type) → λ(x:b) →
+  <right=x | left:a>
+    : <left:a | right:b>

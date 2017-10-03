@@ -1,0 +1,12 @@
+{ `resolver`              : Text
+, `packages`              : List ./PkgSchema
+, `extra-deps`            : List Text
+, `flags`                 : {}
+, `extra-package-dbs`     : List Text
+, `system-ghc`            : Optional Bool
+, `require-stack-version` : Optional Text
+, `arch`                  : Optional Text
+, `extra-include-dirs`    : List Text
+, `extra-lib-dirs`        : List Text
+, `compiler-check`        : Optional Text
+}
