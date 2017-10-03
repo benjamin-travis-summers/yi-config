@@ -1,3 +1,1 @@
-{ location : Text
-, subdirs : List Text
-}
+{ location : Text, subdirs : List Text }

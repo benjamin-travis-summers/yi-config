@@ -1,11 +1,11 @@
-{ `extra-deps`            = []  : List Text
-, `flags`                 = {=} : {}
-, `extra-package-dbs`     = []  : List Text
-, `system-ghc`            = []  : Optional Bool
-, `require-stack-version` = []  : Optional Text
-, `arch`                  = []  : Optional Text
-, `extra-include-dirs`    = []  : List Text
-, `extra-lib-dirs`        = []  : List Text
-, `compiler-check`        = []  : Optional Text
-, `packages`              = []  : List ./PkgSchema
+{ arch                  = [] : Optional Text
+, compiler-check        = [] : Optional Text
+, extra-deps            = [] : List Text
+, extra-include-dirs    = [] : List Text
+, extra-lib-dirs        = [] : List Text
+, extra-package-dbs     = [] : List Text
+, flags                 = ({=} : {})
+, packages              = [] : List ./PkgSchema 
+, require-stack-version = [] : Optional Text
+, system-ghc            = [] : Optional Bool
 }
