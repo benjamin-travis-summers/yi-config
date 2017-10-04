@@ -9,8 +9,8 @@ clean:
 
 ##############################################################################################################
 
-package.yaml: package.dhall
-	dhall-to-yaml <package.dhall >package.yaml
+package.yaml: CONFIG
+	echo '(./CONFIG).package' | dhall-to-yaml >package.yaml
 
-stack.yaml: stack.dhall
-	dhall-to-yaml <stack.dhall >stack.yaml
+stack.yaml: CONFIG
+	echo '(./CONFIG).stack' | dhall-to-yaml >stack.yaml

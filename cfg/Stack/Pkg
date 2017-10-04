@@ -1,3 +1,0 @@
-{ complex = ../Either/right  Text ./ComplexPkg 
-, simple  = ../Either/left  Text ./ComplexPkg 
-}

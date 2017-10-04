@@ -5,7 +5,7 @@
 , extra-lib-dirs        : List Text
 , extra-package-dbs     : List Text
 , flags                 : {}
-, packages              : List ./PkgSchema 
+, packages              : List ../Pkg/Ty 
 , require-stack-version : Optional Text
 , resolver              : Text
 , system-ghc            : Optional Bool

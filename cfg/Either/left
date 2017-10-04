@@ -1,4 +1,0 @@
-  λ(a : Type)
-→ λ(b : Type)
-→ λ(x : a)
-→ (< left = x | right : b > : < left : a | right : b >)
