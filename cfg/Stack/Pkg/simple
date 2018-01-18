@@ -1,1 +1,0 @@
-λ(pkg : Text) → < simple = pkg | complex : ./Complex  >

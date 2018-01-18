@@ -1,8 +1,6 @@
-    let simplePkg = ./cfg/Stack/Pkg/simple 
+    let pkg = constructors ./cfg/Stack/Pkg 
 
-in  let complexPkg = ./cfg/Stack/Pkg/complex 
-
-in  let stackDefaults = ./cfg/Stack/Config/defaults 
+in  let stackDefaults = ./cfg/Stack/ConfigDefaults 
 
 in  let localYiDeps =
           [ "yi-core"
@@ -25,8 +23,8 @@ in  let deps =
 in  let stackYaml =
           { extra-deps = [ "yi-rope-0.10" ]
           , packages   =
-              [ simplePkg "."
-              , complexPkg { location = "../yi/", subdirs = localYiDeps }
+              [ pkg.simple "."
+              , pkg.complex { location = "../yi/", subdirs = localYiDeps }
               ]
           , resolver   = "lts-8.18"
           }
@@ -51,5 +49,5 @@ in  let packageYaml =
           }
 
 in  { package = packageYaml
-    , stack   = (stackDefaults ⫽ stackYaml : ./cfg/Stack/Config/Ty )
+    , stack   = stackDefaults ⫽ stackYaml : ./cfg/Stack/Config 
     }

@@ -4,8 +4,8 @@
 , extra-include-dirs    = [] : List Text
 , extra-lib-dirs        = [] : List Text
 , extra-package-dbs     = [] : List Text
-, flags                 = ({=} : {})
-, packages              = [] : List ../Pkg/Ty 
+, flags                 = {=} : {}
+, packages              = [] : List ./Pkg 
 , require-stack-version = [] : Optional Text
 , system-ghc            = [] : Optional Bool
 }

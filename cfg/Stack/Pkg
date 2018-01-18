@@ -1,0 +1,3 @@
+    let ComplexPkg = { location : Text, subdirs : List Text }
+
+in  < complex : ComplexPkg | simple : Text >
